@@ -27,6 +27,9 @@ def scramble(word):
             break
     return ''.join(letters)
 
+def pick_word(difficulty):
+    return random.choice(WORDS[difficulty])
+
 def print_header(score, streak, round_num):
     print(f'\n  🔀  Word Scramble  |  Score: {score}  |  Streak: {streak}🔥  |  Round: {round_num}\n')
 
